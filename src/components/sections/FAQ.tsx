@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import { HelpCircle, ChevronDown } from "lucide-react"
+import { GeometricDecorations } from "@/components/ui/GeometricDecorations"
 
 const faqs = [
   { q: "Apakah pendaftaran masih dibuka?", a: "Ya, pendaftaran tahun ajaran 2025/2026 masih dibuka. Silakan hubungi admin kami melalui WhatsApp untuk informasi lebih lanjut dan ketersediaan kelas." },
@@ -21,8 +22,8 @@ function FAQItem({ faq, index }: { faq: typeof faqs[0]; index: number }) {
       initial={{ opacity: 0, y: 15 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: index * 0.06 }}
-      className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow"
+      transition={{ delay: index * 0.05 }}
+      className="bg-white rounded-md border border-gray-200 shadow-sm overflow-hidden hover:border-gray-300 transition-colors"
     >
       <button
         onClick={() => setOpen(!open)}
@@ -55,9 +56,8 @@ function FAQItem({ faq, index }: { faq: typeof faqs[0]; index: number }) {
 
 export function FAQ() {
   return (
-    <section id="faq" className="section-padding bg-white relative overflow-hidden">
-      <div className="absolute top-24 left-[7%] w-12 h-12 rounded-full bg-indigo-400/6 animate-float pointer-events-none" />
-
+    <section id="faq" className="section-padding bg-slate-50 relative overflow-hidden">
+      <GeometricDecorations />
       <div className="container-main relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,13 +65,12 @@ export function FAQ() {
           viewport={{ once: true, margin: "-80px" }}
           className="text-center mb-16"
         >
-          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-600 text-sm font-medium border border-indigo-100 mb-4">
+          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-600 text-sm font-medium border border-emerald-100 mb-4">
             <HelpCircle className="w-3.5 h-3.5" />
             FAQ
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Pertanyaan yang{" "}
-            <span className="gradient-text">Sering Ditanyakan</span>
+            Pertanyaan yang Sering Ditanyakan
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
             Temukan jawaban atas pertanyaan umum seputar TPQ MIQI.

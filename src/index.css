@@ -167,3 +167,32 @@
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500;
 }
+
+/* ─── Banner Responsive ─── */
+@media (max-width: 1024px) {
+  .banner-padding {
+    padding: 80px 24px 40px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .banner-padding {
+    padding: 80px 16px 32px !important;
+  }
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLBT5V1s.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v22/pxiDyp8kv8JHgFVrJJLmg1hlEA.ttf) format('truetype');
+}

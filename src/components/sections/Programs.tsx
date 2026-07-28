@@ -3,6 +3,7 @@ import {
   BookOpen, BookMarked, Mic, Brain,
   HandHeart, Moon, Hand, Languages, GraduationCap
 } from "lucide-react"
+import { GeometricDecorations } from "@/components/ui/GeometricDecorations"
 
 const programs = [
   { icon: BookOpen, title: "Iqra", desc: "Pengenalan huruf hijaiyah dan dasar membaca Al-Qur'an dengan metode Iqra yang menyenangkan.", color: "#3B82F6", gradient: "from-blue-500 to-blue-600" },
@@ -17,11 +18,8 @@ const programs = [
 
 export function Programs() {
   return (
-    <section id="program" className="section-padding bg-white relative overflow-hidden">
-      {/* Decorations */}
-      <div className="absolute top-24 right-[7%] w-14 h-14 rounded-full bg-green-400/8 animate-float pointer-events-none" />
-      <div className="absolute bottom-20 left-[5%] w-20 h-20 rounded-3xl bg-orange-400/5 rotate-12 animate-float-reverse pointer-events-none" />
-
+    <section id="program" className="section-padding bg-slate-50 relative overflow-hidden">
+      <GeometricDecorations />
       <div className="container-main relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,12 +27,12 @@ export function Programs() {
           viewport={{ once: true, margin: "-80px" }}
           className="text-center mb-16"
         >
-          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-green-50 text-green-600 text-sm font-medium border border-green-100 mb-4">
+          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-100 text-sm font-medium mb-4">
             <GraduationCap className="w-3.5 h-3.5" />
             Program Pembelajaran
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Program <span className="gradient-text">Unggulan</span> Kami
+            Program Pembelajaran
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
             Kurikulum lengkap yang dirancang khusus untuk memenuhi kebutuhan
@@ -50,14 +48,11 @@ export function Programs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.08 }}
-              className="group relative bg-white rounded-3xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden"
+              className="group bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all duration-300"
             >
-              {/* Hover gradient overlay */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${p.gradient} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-300 rounded-3xl`} />
-              
               <div className="relative z-10">
                 <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300"
+                  className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300"
                   style={{ backgroundColor: `${p.color}12` }}
                 >
                   <p.icon className="w-7 h-7" style={{ color: p.color }} />

@@ -1,6 +1,7 @@
 import { motion } from "motion/react"
 import { Trophy, Medal, Star, Award, Users, BookOpen } from "lucide-react"
 import CountUp from "react-countup"
+import { GeometricDecorations } from "@/components/ui/GeometricDecorations"
 
 const achievementStats = [
   { icon: Trophy, value: 45, suffix: "+", label: "Piala Lomba", color: "#EAB308", bg: "bg-yellow-50" },
@@ -20,10 +21,8 @@ const highlights = [
 
 export function Achievements() {
   return (
-    <section id="prestasi" className="section-padding bg-slate-50/50 relative overflow-hidden">
-      <div className="absolute top-16 right-[6%] w-14 h-14 rounded-full bg-yellow-400/8 animate-float pointer-events-none" />
-      <div className="absolute bottom-20 left-[4%] w-10 h-10 rounded-2xl bg-blue-400/6 animate-float-reverse rotate-12 pointer-events-none" />
-
+    <section id="prestasi" className="section-padding bg-white relative overflow-hidden">
+      <GeometricDecorations />
       <div className="container-main relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,7 +35,7 @@ export function Achievements() {
             Prestasi
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Prestasi <span className="gradient-text">Membanggakan</span>
+            Prestasi Membanggakan
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
             Santri dan pengajar kami terus mengukir prestasi di berbagai ajang kompetisi.
@@ -52,7 +51,7 @@ export function Achievements() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`${s.bg} rounded-3xl p-6 text-center border border-gray-100 hover:shadow-lg transition-all duration-300`}
+              className={`${s.bg} rounded-xl p-6 text-center border border-gray-100 hover:border-gray-200 transition-colors`}
             >
               <s.icon className="w-8 h-8 mx-auto mb-3" style={{ color: s.color }} />
               <p className="text-3xl font-bold text-gray-900">
@@ -71,8 +70,8 @@ export function Achievements() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
-              className="group bg-white rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              transition={{ delay: i * 0.05 }}
+              className="group bg-white rounded-lg p-5 border border-gray-200 shadow-sm hover:border-gray-300 transition-colors"
             >
               <div className="flex items-start gap-3">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: `${h.color}15` }}>

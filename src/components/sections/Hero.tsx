@@ -84,17 +84,21 @@ export function Hero() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-10">
-              <Button className="h-12 px-8 text-base bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer border-0">
-                Daftar Sekarang
-                <ArrowRight className="w-4 h-4 ml-1" />
-              </Button>
-              <Button
-                variant="outline"
-                className="h-12 px-8 text-base rounded-full border-gray-200 hover:border-blue-300 hover:bg-blue-50/50 transition-all duration-300 cursor-pointer"
-              >
-                <Sparkles className="w-4 h-4 mr-1 text-purple-500" />
-                Hubungi Kami
-              </Button>
+              <a href="https://wa.me/6288801252105" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button className="w-full sm:w-auto h-12 px-8 text-base bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full shadow-xl shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer border-0">
+                  Daftar Sekarang
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </Button>
+              </a>
+              <a href="https://wa.me/6288801252105" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button
+                  variant="outline"
+                  className="w-full sm:w-auto h-12 px-8 text-base rounded-full border-gray-200 hover:border-blue-300 hover:bg-blue-50/50 transition-all duration-300 cursor-pointer"
+                >
+                  <Sparkles className="w-4 h-4 mr-1 text-purple-500" />
+                  Hubungi Kami
+                </Button>
+              </a>
             </div>
 
             {/* Trust Badges */}

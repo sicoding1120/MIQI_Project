@@ -1,12 +1,13 @@
 import { motion } from "motion/react"
 import { Eye, Target, Heart, BookOpen, Sparkles } from "lucide-react"
 import CountUp from "react-countup"
+import { GeometricDecorations } from "@/components/ui/GeometricDecorations"
 
 const values = [
-  { icon: BookOpen, label: "Al-Qur'an Pertama", desc: "Menjadikan Al-Qur'an sebagai pedoman utama" },
-  { icon: Heart, label: "Akhlak Mulia", desc: "Membangun karakter Islami sejak dini" },
-  { icon: Target, label: "Metode Terbaik", desc: "Kurikulum terstruktur dan menyenangkan" },
-  { icon: Sparkles, label: "Lingkungan Positif", desc: "Suasana belajar aman dan nyaman" },
+  { icon: BookOpen, label: "Al-Qur'an Pertama", desc: "Menjadikan Al-Qur'an sebagai pedoman utama", color: "#3B82F6" }, // Blue
+  { icon: Heart, label: "Akhlak Mulia", desc: "Membangun karakter Islami sejak dini", color: "#EC4899" }, // Pink
+  { icon: Target, label: "Metode Terbaik", desc: "Kurikulum terstruktur dan menyenangkan", color: "#F59E0B" }, // Amber
+  { icon: Sparkles, label: "Lingkungan Positif", desc: "Suasana belajar aman dan nyaman", color: "#8B5CF6" }, // Purple
 ]
 
 const miniStats = [
@@ -18,12 +19,9 @@ const miniStats = [
 
 export function About() {
   return (
-    <section id="tentang" className="section-padding bg-white relative overflow-hidden">
-      {/* Decorations */}
-      <div className="absolute top-20 right-[5%] w-24 h-24 rounded-full bg-blue-400/5 animate-float pointer-events-none" />
-      <div className="absolute bottom-20 left-[8%] w-16 h-16 rounded-2xl bg-purple-400/8 rotate-12 animate-float-reverse pointer-events-none" />
-
-      <div className="container-main">
+    <section id="tentang" className="section-padding bg-slate-50 relative overflow-hidden">
+      <GeometricDecorations />
+      <div className="container-main relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,13 +29,12 @@ export function About() {
           viewport={{ once: true, margin: "-80px" }}
           className="text-center mb-16"
         >
-          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-sm font-medium border border-blue-100 mb-4">
+          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-100 text-sm font-medium mb-4">
             <BookOpen className="w-3.5 h-3.5" />
             Tentang Kami
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Mengenal Lebih Dekat{" "}
-            <span className="gradient-text">TPQ MIQI</span>
+            Mengenal Lebih Dekat TPQ MIQI
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed">
             Didirikan dengan semangat mencerdaskan generasi Qur'ani, TPQ MIQI telah
@@ -54,10 +51,10 @@ export function About() {
             className="space-y-8"
           >
             {/* Vision */}
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-6 border border-blue-100/50">
+            <div className="bg-white rounded-xl p-6 border border-gray-200">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-blue-500 flex items-center justify-center shrink-0 shadow-lg shadow-blue-500/20">
-                  <Eye className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center shrink-0">
+                  <Eye className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">Visi</h3>
@@ -70,24 +67,24 @@ export function About() {
             </div>
 
             {/* Mission */}
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-6 border border-purple-100/50">
+            <div className="bg-white rounded-xl p-6 border border-gray-200">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-purple-500 flex items-center justify-center shrink-0 shadow-lg shadow-purple-500/20">
-                  <Target className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center shrink-0">
+                  <Target className="w-6 h-6 text-pink-600" />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">Misi</h3>
                   <ul className="text-gray-600 text-sm space-y-2">
                     <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-pink-400 mt-2 shrink-0" />
                       Menyelenggarakan pembelajaran Al-Qur'an yang menyenangkan dan berkualitas
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-pink-400 mt-2 shrink-0" />
                       Membina akhlak mulia dan karakter Islami pada setiap santri
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-pink-400 mt-2 shrink-0" />
                       Menciptakan lingkungan belajar yang aman, nyaman, dan inspiratif
                     </li>
                   </ul>
@@ -112,9 +109,9 @@ export function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="group bg-white rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+                  className="group bg-white rounded-lg p-5 border border-gray-200 shadow-sm transition-transform hover:scale-105"
                 >
-                  <v.icon className="w-8 h-8 text-blue-500 mb-3 group-hover:scale-110 transition-transform" />
+                  <v.icon className="w-8 h-8 mb-3" style={{ color: v.color }} />
                   <p className="font-semibold text-gray-900 text-sm mb-1">{v.label}</p>
                   <p className="text-xs text-gray-500">{v.desc}</p>
                 </motion.div>

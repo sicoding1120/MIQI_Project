@@ -1,0 +1,198 @@
+[
+  {
+    "name": "Rafli",
+    "parent": "Mamah Rafli",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Alhamdulillah selama anak kami mengaji di majlis MIQI banyak perubahan mulai dari adab dan akhlak menjadi lebih baik, lebih percaya diri, dan lebih rajin membaca Al-Qur'an di rumah. Kami sebagai orang tua sangat bersyukur dan merasa terbantu di tengah keterbatasan kami dalam mendidik anak."
+  },
+  {
+    "name": "Farah",
+    "parent": "Mmh Farah",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Terima kasih Abi yang selama ini sabar mengajar kami. Semoga semakin semangat dalam mengajarkan ilmu agama dan kami dapat mengamalkannya dalam kehidupan sehari-hari. Saya sangat bersyukur mendapatkan ilmu yang bermanfaat untuk dunia dan akhirat. Semoga MIQI terus menjadi wadah kebaikan, syiar ilmu agama, dan mempererat tali silaturahmi."
+  },
+  {
+    "name": "Zamzam Fitra Akbar",
+    "parent": "Mmh Zamzam",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Zamzam Fitra Akbar adalah alumni MIQI yang kini mondok di Cibungbulang. Sejak kelas 4 SD belajar di MIQI, ia mendapatkan bekal mengaji dan mempelajari kitab-kitab yang menjadi fondasi untuk melanjutkan pendidikan di pesantren."
+  },
+  {
+    "name": "Iki / Nengsih",
+    "parent": "Mmh Iki",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Alhamdulillah anak-anak sangat semangat mengikuti pengajian. Semoga ilmu yang didapat bermanfaat dan diamalkan dalam kehidupan sehari-hari. Tetap jaga adab, sopan santun, serta hormati orang tua dan guru."
+  },
+  {
+    "name": "Baim",
+    "parent": "Mmh Baim",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Alhamdulillah selama anak kami mengaji di MIQI banyak perubahan pada adab, akhlak, rasa percaya diri, dan kebiasaan membaca Al-Qur'an di rumah. Kami sangat bersyukur dan merasa terbantu dalam mendidik anak."
+  },
+  {
+    "name": "Fuadi",
+    "parent": "Mmh Fuadi",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Sangat berkesan dan memberikan banyak manfaat. Pengajarannya terasa seperti pesantren dengan guru yang sabar membimbing anak-anak agar menjadi pribadi yang beradab, berilmu, dan berakhlak mulia. Semoga MIQI semakin meningkatkan kualitas pembelajarannya."
+  },
+  {
+    "name": "Dzaki",
+    "parent": "Mmh Dzaki",
+    "rating": 4.5,
+    "category": "parent",
+    "testimonial": "Anak-anak merasa nyaman, bahagia, dan senang belajar di MIQI. Harapannya MIQI semakin maju, lebih banyak memberikan hafalan surat, memperkuat praktik shalat, dan menguji satu per satu praktik wudhu serta bacaan shalat."
+  },
+  {
+    "name": "Dzakila",
+    "parent": "Mmh Dzakila",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Anak-anak mendapatkan banyak ilmu di MIQI, mulai dari membaca Iqro dan Al-Qur'an, tata cara shalat, hingga keberanian, kemampuan bersosialisasi, dan rasa percaya diri."
+  },
+  {
+    "name": "Fakhri",
+    "parent": "Mmh Fakhri",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Pengajian di MIQI memberikan banyak pelajaran berharga dan memperluas ilmu keagamaan anak-anak. Semoga MIQI terus istiqamah, berkembang, dan menginspirasi lebih banyak orang."
+  },
+  {
+    "name": "Dzaki Sigor",
+    "parent": "Mmh Dzaki Sigor",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Manfaat MIQI adalah menambah ilmu dan pemahaman agama, meningkatkan keimanan dan ketakwaan, serta menjadi pengingat untuk selalu berada di jalan yang diridhai Allah."
+  },
+  {
+    "name": "Kamil",
+    "parent": "Mmh Kamil",
+    "rating": 4.5,
+    "category": "parent",
+    "testimonial": "Sempurna Abi, sederhana tetapi sangat bermakna."
+  },
+  {
+    "name": "Ardan",
+    "parent": "Mmh Ardan",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Anak-anak memperoleh pemahaman Islam yang lebih baik, bacaan Al-Qur'an yang semakin lancar, belajar kesabaran, kedisiplinan, kebersamaan, serta menjalin hubungan baik dengan teman dan guru."
+  },
+  {
+    "name": "Naufal",
+    "parent": "Mmh Naufal",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Terus membaca Al-Qur'an, mendalami ilmu agama, menghormati guru dan orang tua, serta mengamalkan ilmu dalam kehidupan sehari-hari agar menjadi anak yang berguna."
+  },
+  {
+    "name": "Malik dan Hadi",
+    "parent": "Mmh Malik & Hadi",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "MIQI adalah tempat pertama Malik dan Hadi belajar agama. Banyak ilmu yang bermanfaat diberikan oleh Abi, Ummi, dan para guru. Semoga MIQI terus maju dan melahirkan generasi sukses dunia dan akhirat."
+  },
+  {
+    "name": "Keisha",
+    "parent": "Mmh Keisha",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Saya sangat bersyukur belajar mengaji di MIQI. Ilmu yang diberikan sangat bermanfaat dan membuka wawasan tentang hadits dan Al-Qur'an. Semoga Abi selalu diberikan kekuatan dalam mendidik kami."
+  },
+  {
+    "name": "Nanda",
+    "parent": "Mmh Nanda",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "MIQI bukan hanya tempat mengaji, tetapi juga tempat membentuk karakter anak-anak. Terima kasih kepada Abi, Ummi, dan seluruh pengajar. Semoga menjadi ladang pahala."
+  },
+  {
+    "name": "Abay",
+    "parent": "Mmh Abay",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Pembelajaran di MIQI sangat baik, menyesuaikan karakter anak sehingga mereka semangat belajar. Nilai kekeluargaan, shalat berjamaah, dan latihan menjadi imam menjadi keunggulan yang sangat berkesan."
+  },
+  {
+    "name": "Bagas",
+    "parent": "Mmh Bagas",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Setelah belajar di MIQI selama dua tahun, Bagas melanjutkan ke pesantren dengan bimbingan Abi. Kami sangat bersyukur atas ilmu agama yang diberikan kepada anak kami."
+  },
+  {
+    "name": "Gonggo",
+    "parent": "Mmh Gonggo",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Tidak bisa berkata-kata selain rasa syukur karena anak dapat belajar di MIQI. Awalnya khawatir karena jadwal malam, tetapi Alhamdulillah semuanya berjalan baik dan penuh manfaat."
+  },
+  {
+    "name": "Iyo",
+    "parent": "Mmh Iyo",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "MIQI teruslah menjadi baik. Abi dan Ummi selalu konsisten hadir untuk anak-anak meski memiliki banyak kesibukan. Terima kasih atas dedikasinya."
+  },
+  {
+    "name": "Tidak Disebutkan",
+    "parent": "Daniel Skanda",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Selama anak kami mengaji di MIQI, adab, akhlak, rasa percaya diri, dan kebiasaan membaca Al-Qur'an meningkat. Kami sangat bersyukur dan merasa terbantu."
+  },
+  {
+    "name": "Tidak Disebutkan",
+    "parent": "Novi Rahmawati",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Belajar di MIQI sangat menyenangkan. Suasana hangat, guru sabar, menambah wawasan Islam, memperbaiki bacaan Al-Qur'an, mempererat silaturahmi, dan membentuk karakter Islami."
+  },
+  {
+    "name": "Japar",
+    "parent": "Cinta Ramlan",
+    "rating": 5,
+    "category": "parent",
+    "testimonial": "Japar merasa nyaman belajar di MIQI karena metode pengajarannya memahami karakter anak. Kini Japar masih melanjutkan pendidikan di pesantren."
+  },
+  {
+    "name": "Rafli",
+    "parent": "Alumni",
+    "rating": 5,
+    "category": "alumni",
+    "testimonial": "Saya datang sebagai anak yang pemalu, namun berkembang menjadi lebih percaya diri. MIQI mengajarkan ilmu agama, etika, adab, kewibawaan, public speaking, serta kesiapan menghadapi berbagai situasi."
+  },
+  {
+    "name": "Amel",
+    "parent": "Alumni",
+    "rating": 5,
+    "category": "alumni",
+    "testimonial": "MIQI bukan hanya mengajarkan agama, tetapi juga melatih cara berpikir, komunikasi, percaya diri, dan kemampuan berbaur dengan lingkungan. Terima kasih kepada Abi dan Ummi."
+  },
+  {
+    "name": "Bagas Sailendra",
+    "parent": "Alumni",
+    "rating": 5,
+    "category": "alumni",
+    "testimonial": "Selain ilmu agama dan adab, kami diajarkan pentingnya menjaga lisan. Motivasi dari Abi dan Ummi membuat saya melanjutkan pendidikan ke pesantren hingga kini menjadi pengajar di SDIT Citeureup."
+  },
+  {
+    "name": "Rabih Rabbani",
+    "parent": "Alumni",
+    "rating": 5,
+    "category": "alumni",
+    "testimonial": "Mengikuti pengajian di MIQI membuat iman bertambah, hati lebih tenang, ilmu agama semakin luas, dan semangat ibadah meningkat. Terima kasih kepada Abi dan Ummi."
+  },
+  {
+    "name": "Yusuf",
+    "parent": "Alumni",
+    "rating": 5,
+    "category": "alumni",
+    "testimonial": "Dari MIQI saya memulai perjalanan menuntut ilmu. Kini saya sedang mengejar hafalan hingga juz ke-7. Terima kasih atas ilmu tahsin, tajwid, dan adab yang menjadi bekal hidup."
+  }
+]
