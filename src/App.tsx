@@ -4,6 +4,7 @@ import { Banner } from "@/components/sections/Banner"
 import { QuickMenu } from "@/components/sections/QuickMenu"
 import { WhyChoose } from "@/components/sections/WhyChoose"
 import { Programs } from "@/components/sections/Programs"
+import { FloatingNav } from "@/components/sections/FloatingNav"
 
 // Lazy load below-fold sections — only parsed when scrolled into view
 const LearningMethod = lazy(() => import("@/components/sections/LearningMethod").then(m => ({ default: m.LearningMethod })))
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
+      <FloatingNav />
       <Banner />
       <QuickMenu />
       {/* <About /> */}

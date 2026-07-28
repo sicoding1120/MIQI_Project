@@ -1,63 +1,60 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
-import { Image, X, ZoomIn, Play, MapPin } from "lucide-react"
+import { Image, ZoomIn, MapPin } from "lucide-react"
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
-import { Button } from "@/components/ui/button"
 import { GeometricDecorations } from "@/components/ui/GeometricDecorations"
 
-/* ─── Modern Gallery Data ─── */
-const galleryCategories = ["Semua", "Pembelajaran", "Acara", "Fasilitas"]
+/* ─── Gallery Categories ─── */
+const galleryCategories = ["Semua", "Ngaji", "Takjil", "Haflah", "Lomba", "Solat", "Umroh"]
 
+/* ─── Gallery Data from public/event/ ─── */
 const galleryItems = [
-  { 
-    id: 1,
-    title: "Belajar Iqra Interaktif", 
-    category: "Pembelajaran", 
-    image: "/banner/1.jpeg", // Fallback to banner images for demo
-    span: "md:col-span-2 md:row-span-2",
-    date: "12 Okt 2025"
-  },
-  { 
-    id: 2,
-    title: "Hafalan Al-Qur'an", 
-    category: "Pembelajaran", 
-    image: "/banner/2.jpeg",
-    span: "md:col-span-1 md:row-span-1",
-    date: "05 Nov 2025"
-  },
-  { 
-    id: 3,
-    title: "Peringatan Idul Adha", 
-    category: "Acara", 
-    image: "/banner/3.jpeg",
-    span: "md:col-span-1 md:row-span-2",
-    date: "10 Dzulhijjah"
-  },
-  { 
-    id: 4,
-    title: "Lomba Kaligrafi", 
-    category: "Acara", 
-    image: "/banner/4.jpeg",
-    span: "md:col-span-2 md:row-span-1",
-    date: "15 Des 2025"
-  },
-  { 
-    id: 5,
-    title: "Ruang Kelas Nyaman", 
-    category: "Fasilitas", 
-    image: "/banner/5.jpeg",
-    span: "md:col-span-1 md:row-span-1",
-    date: "Area Indoor"
-  },
-  { 
-    id: 6,
-    title: "Khotam Al-Qur'an", 
-    category: "Pembelajaran", 
-    image: "/banner/6.jpeg",
-    span: "md:col-span-2 md:row-span-1",
-    date: "20 Jan 2026"
-  },
+  // ── Ngaji (13 photos) ──
+  { id: 1,  title: "Kegiatan Mengaji", category: "Ngaji", image: "/event/ngaji/1.jpeg", span: "md:col-span-2 md:row-span-2", label: "Belajar Al-Qur'an" },
+  { id: 2,  title: "Belajar Iqra", category: "Ngaji", image: "/event/ngaji/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Kelas Iqra" },
+  { id: 3,  title: "Hafalan Surat", category: "Ngaji", image: "/event/ngaji/3.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tahfidz" },
+  { id: 4,  title: "Kelas Tahsin", category: "Ngaji", image: "/event/ngaji/4.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tahsin" },
+  { id: 5,  title: "Suasana Belajar", category: "Ngaji", image: "/event/ngaji/5.jpeg", span: "md:col-span-1 md:row-span-1", label: "Kelas Santri" },
+  { id: 6,  title: "Santri Mengaji", category: "Ngaji", image: "/event/ngaji/6.jpeg", span: "md:col-span-1 md:row-span-1", label: "Mengaji Bersama" },
+  { id: 7,  title: "Bimbingan Mengaji", category: "Ngaji", image: "/event/ngaji/7.jpeg", span: "md:col-span-1 md:row-span-1", label: "Bimbingan" },
+  { id: 8,  title: "Setoran Hafalan", category: "Ngaji", image: "/event/ngaji/8.jpeg", span: "md:col-span-1 md:row-span-1", label: "Setoran" },
+  { id: 9,  title: "Kelas Al-Qur'an", category: "Ngaji", image: "/event/ngaji/9.jpeg", span: "md:col-span-1 md:row-span-1", label: "Al-Qur'an" },
+  { id: 10, title: "Belajar Kitab", category: "Ngaji", image: "/event/ngaji/10.jpeg", span: "md:col-span-1 md:row-span-1", label: "Kitab" },
+  { id: 11, title: "Sesi Mengaji Malam", category: "Ngaji", image: "/event/ngaji/11.jpeg", span: "md:col-span-1 md:row-span-1", label: "Ngaji Malam" },
+  { id: 12, title: "Latihan Tajwid", category: "Ngaji", image: "/event/ngaji/12.jpeg", span: "md:col-span-2 md:row-span-1", label: "Tajwid" },
+  { id: 13, title: "Khotam Al-Qur'an", category: "Ngaji", image: "/event/ngaji/13.jpeg", span: "md:col-span-1 md:row-span-1", label: "Khotmil Qur'an" },
+
+  // ── Takjil (11 photos) ──
+  { id: 14, title: "Bagi Takjil", category: "Takjil", image: "/event/takjil/1.jpeg", span: "md:col-span-2 md:row-span-2", label: "Ramadhan" },
+  { id: 15, title: "Persiapan Takjil", category: "Takjil", image: "/event/takjil/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Persiapan" },
+  { id: 16, title: "Berbagi Kebaikan", category: "Takjil", image: "/event/takjil/3.jpeg", span: "md:col-span-1 md:row-span-1", label: "Berbagi" },
+  { id: 17, title: "Takjil Gratis", category: "Takjil", image: "/event/takjil/4.jpeg", span: "md:col-span-1 md:row-span-1", label: "Gratis" },
+  { id: 18, title: "Santri Bagi Takjil", category: "Takjil", image: "/event/takjil/5.jpeg", span: "md:col-span-1 md:row-span-1", label: "Aksi Santri" },
+  { id: 19, title: "Keseruan Takjil", category: "Takjil", image: "/event/takjil/6.jpeg", span: "md:col-span-1 md:row-span-1", label: "Keseruan" },
+  { id: 20, title: "Takjil di Jalan", category: "Takjil", image: "/event/takjil/7.jpeg", span: "md:col-span-1 md:row-span-1", label: "Di Jalan" },
+  { id: 21, title: "Buka Puasa Bersama", category: "Takjil", image: "/event/takjil/8.jpeg", span: "md:col-span-2 md:row-span-1", label: "Bukber" },
+  { id: 22, title: "Sedekah Takjil", category: "Takjil", image: "/event/takjil/9.jpeg", span: "md:col-span-1 md:row-span-1", label: "Sedekah" },
+  { id: 23, title: "Takjil untuk Warga", category: "Takjil", image: "/event/takjil/10.jpeg", span: "md:col-span-1 md:row-span-1", label: "Untuk Warga" },
+  { id: 24, title: "Kebersamaan Ramadhan", category: "Takjil", image: "/event/takjil/11.jpeg", span: "md:col-span-1 md:row-span-1", label: "Kebersamaan" },
+
+  // ── Haflah (3 photos) ──
+  { id: 25, title: "Wisuda Santri", category: "Haflah", image: "/event/haflah/1.jpeg", span: "md:col-span-2 md:row-span-2", label: "Wisuda" },
+  { id: 26, title: "Acara Haflah", category: "Haflah", image: "/event/haflah/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Perayaan" },
+  { id: 27, title: "Pentas Seni Santri", category: "Haflah", image: "/event/haflah/3.jpeg", span: "md:col-span-1 md:row-span-1", label: "Pentas Seni" },
+
+  // ── Lomba (3 photos) ──
+  { id: 28, title: "Lomba Hafalan", category: "Lomba", image: "/event/lomba/1.jpeg", span: "md:col-span-2 md:row-span-2", label: "Hafalan" },
+  { id: 29, title: "Lomba Tilawah", category: "Lomba", image: "/event/lomba/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tilawah" },
+  { id: 30, title: "Perlombaan Santri", category: "Lomba", image: "/event/lomba/3.jpeg", span: "md:col-span-1 md:row-span-1", label: "Kompetisi" },
+
+  // ── Solat (2 photos) ──
+  { id: 31, title: "Sholat Berjamaah", category: "Solat", image: "/event/solat/1.jpeg", span: "md:col-span-2 md:row-span-2", label: "Berjamaah" },
+  { id: 32, title: "Praktik Sholat", category: "Solat", image: "/event/solat/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Praktik" },
+
+  // ── Umroh (2 photos) ──
+  { id: 33, title: "Perjalanan Umroh", category: "Umroh", image: "/event/umroh/1.jpeg", span: "md:col-span-2 md:row-span-2", label: "Umroh" },
+  { id: 34, title: "Ibadah di Tanah Suci", category: "Umroh", image: "/event/umroh/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tanah Suci" },
 ]
 
 export function Gallery() {
@@ -65,9 +62,16 @@ export function Gallery() {
   const [lightboxIndex, setLightboxIndex] = useState(-1)
 
   // Filter items based on active tab
-  const filteredItems = galleryItems.filter(
-    (item) => activeTab === "Semua" || item.category === activeTab
-  )
+  const filteredItems = activeTab === "Semua"
+    ? [
+        { ...galleryItems.find(i => i.category === "Ngaji")!, span: "md:col-span-2 md:row-span-2" },
+        { ...galleryItems.find(i => i.category === "Takjil")!, span: "md:col-span-1 md:row-span-1" },
+        { ...galleryItems.find(i => i.category === "Haflah")!, span: "md:col-span-1 md:row-span-2" },
+        { ...galleryItems.find(i => i.category === "Lomba")!, span: "md:col-span-2 md:row-span-1" },
+        { ...galleryItems.find(i => i.category === "Solat")!, span: "md:col-span-1 md:row-span-1" },
+        { ...galleryItems.find(i => i.category === "Umroh")!, span: "md:col-span-2 md:row-span-1" },
+      ]
+    : galleryItems.filter((item) => item.category === activeTab)
 
   // Create slides for lightbox dynamically based on filtered items
   const slides = filteredItems.map(item => ({ src: item.image, alt: item.title }))
@@ -96,7 +100,7 @@ export function Gallery() {
               </span>
             </h2>
             <p className="text-gray-500 text-lg max-w-xl">
-              Intip berbagai kegiatan seru, proses belajar yang menyenangkan, serta fasilitas terbaik yang kami sediakan di MIQI TPQ.
+              Intip berbagai kegiatan seru, proses belajar yang menyenangkan, serta momen berharga di MIQI TPQ.
             </p>
           </motion.div>
 
@@ -156,7 +160,7 @@ export function Gallery() {
                     </span>
                     <span className="text-white/70 text-xs flex items-center gap-1">
                       <MapPin className="w-3 h-3" />
-                      {item.date}
+                      {item.label}
                     </span>
                   </div>
                   <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
