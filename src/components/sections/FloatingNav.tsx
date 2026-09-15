@@ -21,7 +21,7 @@ const shortcuts = [
   { icon: CalendarDays, label: "Jadwal", href: "#jadwal", color: "#22C55E", bg: "rgba(34,197,94,0.1)" },
   { icon: Wallet, label: "Biaya", href: "#jadwal", color: "#F97316", bg: "rgba(249,115,22,0.1)" },
   { icon: Image, label: "Galeri", href: "#galeri", color: "#EC4899", bg: "rgba(236,72,153,0.1)" },
-  { icon: Trophy, label: "Prestasi", href: "#prestasi", color: "#EAB308", bg: "rgba(234,179,8,0.1)" },
+  // { icon: Trophy, label: "Prestasi", href: "#prestasi", color: "#EAB308", bg: "rgba(234,179,8,0.1)" },
   { icon: MapPin, label: "Lokasi", href: "#kontak", color: "#EF4444", bg: "rgba(239,68,68,0.1)" },
   { icon: HelpCircle, label: "FAQ", href: "#faq", color: "#6366F1", bg: "rgba(99,102,241,0.1)" },
   { icon: PenLine, label: "Daftar", href: "#daftar", color: "#10B981", bg: "rgba(16,185,129,0.1)" },
@@ -91,7 +91,7 @@ export function FloatingNav() {
                 <div className="h-px bg-gray-100 mb-3" />
 
                 {/* Navigation Grid */}
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-4 gap-2">
                   {shortcuts.map((item, i) => (
                     <motion.button
                       key={item.label}

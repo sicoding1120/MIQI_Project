@@ -53,8 +53,17 @@ const galleryItems = [
   { id: 32, title: "Praktik Sholat", category: "Solat", image: "/event/solat/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Praktik" },
 
   // ── Umroh (2 photos) ──
-  { id: 33, title: "Perjalanan Umroh", category: "Umroh", image: "/event/umroh/1.jpeg", span: "md:col-span-2 md:row-span-2", label: "Umroh" },
-  { id: 34, title: "Ibadah di Tanah Suci", category: "Umroh", image: "/event/umroh/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tanah Suci" },
+  { id: 33, title: "Perjalanan Ziarah", category: "Ziarah", image: "/event/umroh/1.jpeg", span: "md:col-span-2 md:row-span-2", label: "Umroh" },
+  { id: 34, title: "Ibadah di Tanah Suci", category: "Ziarah", image: "/event/umroh/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tanah Suci" },
+
+  // Syukuran khotam iqro dan quran
+  { id: 34, title: "Ibadah di Tanah Suci", category: "Ziarah", image: "/event/umroh/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tanah Suci" },
+  { id: 34, title: "Ibadah di Tanah Suci", category: "Ziarah", image: "/event/umroh/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tanah Suci" },
+  { id: 34, title: "Ibadah di Tanah Suci", category: "Ziarah", image: "/event/umroh/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tanah Suci" },
+
+  // kajian kitab kuning
+  { id: 34, title: "Ibadah di Tanah Suci", category: "Ziarah", image: "/event/umroh/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tanah Suci" },
+  { id: 34, title: "Ibadah di Tanah Suci", category: "Ziarah", image: "/event/umroh/2.jpeg", span: "md:col-span-1 md:row-span-1", label: "Tanah Suci" },
 ]
 
 export function Gallery() {
@@ -69,7 +78,7 @@ export function Gallery() {
         { ...galleryItems.find(i => i.category === "Haflah")!, span: "md:col-span-1 md:row-span-2" },
         { ...galleryItems.find(i => i.category === "Lomba")!, span: "md:col-span-2 md:row-span-1" },
         { ...galleryItems.find(i => i.category === "Solat")!, span: "md:col-span-1 md:row-span-1" },
-        { ...galleryItems.find(i => i.category === "Umroh")!, span: "md:col-span-2 md:row-span-1" },
+        { ...galleryItems.find(i => i.category === "Ziarah")!, span: "md:col-span-2 md:row-span-1" },
       ]
     : galleryItems.filter((item) => item.category === activeTab)
 

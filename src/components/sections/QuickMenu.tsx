@@ -17,7 +17,7 @@ const shortcuts = [
   { icon: CalendarDays, label: "Jadwal", href: "#jadwal", color: "bg-green-500", bg: "bg-green-50", border: "border-green-100" },
   { icon: Wallet, label: "Biaya", href: "#jadwal", color: "bg-orange-500", bg: "bg-orange-50", border: "border-orange-100" },
   { icon: Image, label: "Galeri", href: "#galeri", color: "bg-pink-500", bg: "bg-pink-50", border: "border-pink-100" },
-  { icon: Trophy, label: "Prestasi", href: "#prestasi", color: "bg-yellow-500", bg: "bg-yellow-50", border: "border-yellow-100" },
+  // { icon: Trophy, label: "Prestasi", href: "#prestasi", color: "bg-yellow-500", bg: "bg-yellow-50", border: "border-yellow-100" },
   { icon: MapPin, label: "Lokasi", href: "#kontak", color: "bg-red-500", bg: "bg-red-50", border: "border-red-100" },
   { icon: HelpCircle, label: "FAQ", href: "#faq", color: "bg-indigo-500", bg: "bg-indigo-50", border: "border-indigo-100" },
   { icon: PenLine, label: "Pendaftaran", href: "#daftar", color: "bg-emerald-500", bg: "bg-emerald-50", border: "border-emerald-100" },
@@ -34,7 +34,7 @@ export function QuickMenu() {
           transition={{ duration: 0.5 }}
           className="bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/40 p-6 sm:p-8"
         >
-          <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-4">
+          <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-8 gap-4">
             {shortcuts.map((item, i) => (
               <motion.a
                 key={item.label}

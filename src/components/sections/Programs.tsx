@@ -1,7 +1,8 @@
 import { motion } from "motion/react"
 import {
   BookOpen, BookMarked, Mic, Brain,
-  HandHeart, Moon, Hand, Languages, GraduationCap
+  HandHeart, Moon, Hand, Languages, GraduationCap,
+  BookOpenText
 } from "lucide-react"
 import { GeometricDecorations } from "@/components/ui/GeometricDecorations"
 
@@ -14,6 +15,7 @@ const programs = [
   { icon: HandHeart, title: "Adab Islami", desc: "Pembinaan adab dan akhlak mulia sesuai tuntunan Rasulullah SAW.", color: "#EAB308", gradient: "from-yellow-500 to-yellow-600" },
   { icon: Hand, title: "Praktik Sholat", desc: "Pembelajaran tata cara sholat yang benar beserta bacaan-bacaannya.", color: "#EF4444", gradient: "from-red-500 to-red-600" },
   { icon: Languages, title: "Bahasa Arab Dasar", desc: "Pengenalan kosa kata bahasa Arab dasar untuk pemahaman Al-Qur'an.", color: "#6366F1", gradient: "from-indigo-500 to-indigo-600" },
+  { icon: BookOpenText, title: "Kajian Jum'at Ummahat/Ibu", desc: "Pengajian Rutin yang diadakan setiap Jum'at untuk para Ummahat.", color: "#34A99D", gradient: "from-indigo-500 to-indigo-60" },
 ]
 
 export function Programs() {
@@ -40,7 +42,7 @@ export function Programs() {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {programs.map((p, i) => (
             <motion.div
               key={p.title}

@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button"
 import { GeometricDecorations } from "@/components/ui/GeometricDecorations"
 
 const schedules = [
-  { name: "Shigor Awal", time: "15:30 – 16:30", days: "Senin – Jumat", age: "4 – 6 Tahun", color: "#3B82F6", icon: Sunrise },
-  { name: "Shigor Tsani", time: "17:00 – 19:30", days: "Senin – Jumat", age: "7 – 10 Tahun", color: "#8B5CF6", icon: Sun },
-  { name: "Kibar", time: "17:30 – 19:30", days: "Senin – Jumat", age: "10 – 13 Tahun", color: "#22C55E", icon: Sunset },
+  { name: "Shigor Awal", time: "15:30 – 16:30", days: "Senin – Sabtu", age: "4 – 6 Tahun", color: "#3B82F6", icon: Sunrise },
+  { name: "Shigor Tsani", time: "17:00 – 19:30", days: "Senin – Sabtu", age: "7 – 10 Tahun", color: "#8B5CF6", icon: Sun },
+  { name: "Kibar", time: "17:30 – 19:30", days: "Senin – Sabtu", age: "10 – 12 Tahun", color: "#22C55E", icon: Sunset },
 ]
-
+  
 const fees = [
   { label: "Biaya Pendaftaran", amount: "Gratis", note: "Sekali bayar", icon: FileText, color: "#3B82F6" },
   { label: "SPP Bulanan", amount: "Rp 50.000", note: "Per bulan", icon: Coins, color: "#22C55E" },
