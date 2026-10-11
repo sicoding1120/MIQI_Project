@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+
+# Allow all crawlers to access all public content
+User-agent: *
+Allow: /
+
+# Sitemap — uncomment and update after deploying to production domain
+# Sitemap: https://tpqmiqi.my.id/sitemap.xml

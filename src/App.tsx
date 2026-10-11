@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react"
+import { SEOHead } from "@/components/SEOHead"
 import { Navbar } from "@/components/sections/Navbar"
 import { Banner } from "@/components/sections/Banner"
 import { QuickMenu } from "@/components/sections/QuickMenu"
@@ -22,30 +23,39 @@ const Footer = lazy(() => import("@/components/sections/Footer").then(m => ({ de
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <FloatingNav />
-      <Banner />
-      <QuickMenu />
-      {/* <About /> */}
-      <WhyChoose />
-      <Programs />
-      <Suspense fallback={null}>
-        <LearningMethod />
-        <StudentJourney />
-        <Teachers />
-        <Students />
-        {/* <Achievements /> */}
-        <Gallery />
-        <Testimonials />
-        <ScheduleFees />
-        <Location />
-        <FAQ />
-        <SocialMedia />
-        <FinalCTA />
-        <Footer />
-      </Suspense>
-    </div>
+    <>
+      <SEOHead />
+      <div className="min-h-screen">
+        <header>
+          <Navbar />
+        </header>
+        <FloatingNav />
+        <main>
+          <Banner />
+          <QuickMenu />
+          {/* <About /> */}
+          <WhyChoose />
+          <Programs />
+          <Suspense fallback={null}>
+            <LearningMethod />
+            <StudentJourney />
+            <Teachers />
+            <Students />
+            {/* <Achievements /> */}
+            <Gallery />
+            <Testimonials />
+            <ScheduleFees />
+            <Location />
+            <FAQ />
+            <SocialMedia />
+            <FinalCTA />
+          </Suspense>
+        </main>
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
+      </div>
+    </>
   )
 }
 

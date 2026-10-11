@@ -6,12 +6,12 @@ import { GeometricDecorations } from "@/components/ui/GeometricDecorations"
 
 /* ─── Banner Image Sources ─── */
 const bannerImages = [
-  "/banner/1.jpeg",
-  "/banner/2.jpeg",
-  "/banner/3.jpeg",
-  "/banner/4.jpeg",
-  "/banner/5.jpeg",
-  "/banner/6.jpeg",
+  { src: "/banner/1.jpeg", alt: "Kegiatan belajar mengaji santri TPQ MIQI" },
+  { src: "/banner/2.jpeg", alt: "Suasana kelas Al-Qur'an TPQ MIQI" },
+  { src: "/banner/3.jpeg", alt: "Santri TPQ MIQI belajar bersama" },
+  { src: "/banner/4.jpeg", alt: "Aktivitas pembelajaran di TPQ MIQI" },
+  { src: "/banner/5.jpeg", alt: "Kebersamaan santri TPQ MIQI" },
+  { src: "/banner/6.jpeg", alt: "Momen berharga di TPQ MIQI" },
 ]
 
 /* ─── Social Icons ─── */
@@ -116,6 +116,8 @@ function BannerCarousel() {
   const [current, setCurrent] = useState(0)
   const [direction, setDirection] = useState(1)
 
+  const total = bannerImages.length
+
   const goTo = useCallback((idx: number) => {
     setDirection(idx > current ? 1 : -1)
     setCurrent(idx)
@@ -123,13 +125,13 @@ function BannerCarousel() {
 
   const next = useCallback(() => {
     setDirection(1)
-    setCurrent((prev) => (prev + 1) % bannerImages.length)
-  }, [])
+    setCurrent((prev) => (prev + 1) % total)
+  }, [total])
 
   const prev = useCallback(() => {
     setDirection(-1)
-    setCurrent((prev) => (prev - 1 + bannerImages.length) % bannerImages.length)
-  }, [])
+    setCurrent((prev) => (prev - 1 + total) % total)
+  }, [total])
 
   // Auto-rotate every 5 seconds
   useEffect(() => {
@@ -145,8 +147,8 @@ function BannerCarousel() {
         <AnimatePresence mode="wait" custom={direction}>
           <motion.img
             key={current}
-            src={bannerImages[current]}
-            alt={`MIQI Banner ${current + 1}`}
+            src={bannerImages[current].src}
+            alt={bannerImages[current].alt}
             custom={direction}
             variants={slideVariants}
             initial="enter"
@@ -377,7 +379,7 @@ export function Banner() {
       <div className="lg:hidden absolute top-24 right-4 left-4 z-0 opacity-15">
         <div className="w-full aspect-video rounded-2xl overflow-hidden">
           <img
-            src={bannerImages[0]}
+            src={bannerImages[0].src}
             alt=""
             className="w-full h-full object-cover"
             loading="lazy"
