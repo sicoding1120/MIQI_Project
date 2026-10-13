@@ -1,38 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Halaman Utama (Apex Domain) -->
+  <!-- ═══════════════════════════════════════════════════════════
+       Halaman Utama — TPQ MIQI (Majelis Ta'lim Inarotul Qalbi)
+       Keywords: TPQ, MIQI, Majelis Taklim, Taman Pendidikan Al-Qur'an
+  ═══════════════════════════════════════════════════════════ -->
   <url>
     <loc>https://tpqmiqi.my.id/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+
+    <!-- Logo TPQ MIQI -->
     <image:image>
       <image:loc>https://tpqmiqi.my.id/logo/utama.png</image:loc>
-      <image:title>Logo TPQ MIQI</image:title>
+      <image:title>Logo TPQ MIQI — Majelis Ta'lim Inarotul Qalbi</image:title>
+      <image:caption>Logo resmi Taman Pendidikan Al-Qur'an MIQI (Majelis Taklim Inarotul Qalbi) Cibinong Bogor</image:caption>
     </image:image>
+
+    <!-- Banner 1 — Kegiatan Belajar Mengaji -->
     <image:image>
       <image:loc>https://tpqmiqi.my.id/banner/1.jpeg</image:loc>
       <image:title>Kegiatan Belajar Mengaji Santri TPQ MIQI</image:title>
+      <image:caption>Santri TPQ MIQI sedang belajar mengaji Al-Qur'an di Majelis Taklim Inarotul Qalbi Cibinong Bogor</image:caption>
+    </image:image>
+
+    <!-- Banner 2 — Suasana Kelas -->
+    <image:image>
+      <image:loc>https://tpqmiqi.my.id/banner/2.jpeg</image:loc>
+      <image:title>Suasana Kelas Al-Qur'an TPQ MIQI</image:title>
+      <image:caption>Suasana kelas belajar Al-Qur'an di TPQ MIQI Cibinong — program Iqra, Tahsin, Tahfidz</image:caption>
+    </image:image>
+
+    <!-- Banner 3 — Belajar Bersama -->
+    <image:image>
+      <image:loc>https://tpqmiqi.my.id/banner/3.jpeg</image:loc>
+      <image:title>Santri TPQ MIQI Belajar Bersama</image:title>
+      <image:caption>Santri belajar bersama di Taman Pendidikan Al-Qur'an MIQI Cibinong Bogor</image:caption>
+    </image:image>
+
+    <!-- Banner 4 — Aktivitas Pembelajaran -->
+    <image:image>
+      <image:loc>https://tpqmiqi.my.id/banner/4.jpeg</image:loc>
+      <image:title>Aktivitas Pembelajaran TPQ MIQI</image:title>
+      <image:caption>Aktivitas pembelajaran interaktif di TPQ MIQI Majelis Taklim Inarotul Qalbi</image:caption>
+    </image:image>
+
+    <!-- Banner 5 — Kebersamaan Santri -->
+    <image:image>
+      <image:loc>https://tpqmiqi.my.id/banner/5.jpeg</image:loc>
+      <image:title>Kebersamaan Santri TPQ MIQI</image:title>
+      <image:caption>Momen kebersamaan santri TPQ MIQI di Cibinong Bogor — Majelis Taklim untuk anak</image:caption>
+    </image:image>
+
+    <!-- Banner 6 — Momen Berharga -->
+    <image:image>
+      <image:loc>https://tpqmiqi.my.id/banner/6.jpeg</image:loc>
+      <image:title>Momen Berharga di TPQ MIQI</image:title>
+      <image:caption>Momen berharga kegiatan santri di Taman Pendidikan Al-Qur'an MIQI</image:caption>
+    </image:image>
+
+    <!-- Banner 7 -->
+    <image:image>
+      <image:loc>https://tpqmiqi.my.id/banner/7.jpeg</image:loc>
+      <image:title>Kegiatan TPQ MIQI Cibinong</image:title>
+      <image:caption>Kegiatan belajar mengaji di TPQ MIQI — Majelis Taklim Inarotul Qalbi Cibinong Bogor</image:caption>
     </image:image>
   </url>
 
-  <!-- Halaman Utama (WWW Domain) -->
+  <!-- ═══════════════════════════════════════════════════════════
+       Halaman Utama (WWW variant — canonical redirect)
+  ═══════════════════════════════════════════════════════════ -->
   <url>
     <loc>https://www.tpqmiqi.my.id/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     <image:image>
       <image:loc>https://www.tpqmiqi.my.id/logo/utama.png</image:loc>
-      <image:title>Logo TPQ MIQI</image:title>
+      <image:title>Logo TPQ MIQI — Majelis Ta'lim Inarotul Qalbi</image:title>
     </image:image>
     <image:image>
       <image:loc>https://www.tpqmiqi.my.id/banner/1.jpeg</image:loc>
-      <image:title>Kegiatan Belajar Mengaji Santri TPQ MIQI</image:title>
+      <image:title>Kegiatan Belajar Mengaji Santri TPQ MIQI Cibinong</image:title>
     </image:image>
   </url>
 

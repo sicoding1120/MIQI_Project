@@ -1,9 +1,35 @@
-# https://www.robotstxt.org/robotstxt.html
+# ═══════════════════════════════════════════════════════════════
+# robots.txt — TPQ MIQI (Majelis Ta'lim Inarotul Qalbi)
+# https://tpqmiqi.my.id
+# ═══════════════════════════════════════════════════════════════
 
-# Allow all crawlers to access all public content
+# Allow all search engines to crawl
 User-agent: *
 Allow: /
+Disallow: /node_modules/
+Disallow: /src/
 
-# Sitemap for Google Search Console
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /banner/
+Allow: /logo/
+Allow: /student/
+Allow: /pengampuh/
+Allow: /event/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Yandex
+User-agent: Yandex
+Allow: /
+
+# Sitemap location
 Sitemap: https://tpqmiqi.my.id/sitemap.xml
-Sitemap: https://www.tpqmiqi.my.id/sitemap.xml
