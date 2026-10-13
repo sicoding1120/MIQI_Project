@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!--
-    TPQ MIQI Sitemap
-    This is a single-page application with one indexable URL.
-    Update the <loc> to the production domain after deployment.
-  -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- Halaman Utama (Apex Domain) -->
   <url>
     <loc>https://tpqmiqi.my.id/</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://tpqmiqi.my.id/logo/utama.png</image:loc>
+      <image:title>Logo TPQ MIQI</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://tpqmiqi.my.id/banner/1.jpeg</image:loc>
+      <image:title>Kegiatan Belajar Mengaji Santri TPQ MIQI</image:title>
+    </image:image>
   </url>
+
+  <!-- Halaman Utama (WWW Domain) -->
+  <url>
+    <loc>https://www.tpqmiqi.my.id/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.tpqmiqi.my.id/logo/utama.png</image:loc>
+      <image:title>Logo TPQ MIQI</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tpqmiqi.my.id/banner/1.jpeg</image:loc>
+      <image:title>Kegiatan Belajar Mengaji Santri TPQ MIQI</image:title>
+    </image:image>
+  </url>
+
 </urlset>

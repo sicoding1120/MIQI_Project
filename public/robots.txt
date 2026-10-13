@@ -4,5 +4,6 @@
 User-agent: *
 Allow: /
 
-# Sitemap — uncomment and update after deploying to production domain
-# Sitemap: https://tpqmiqi.my.id/sitemap.xml
+# Sitemap for Google Search Console
+Sitemap: https://tpqmiqi.my.id/sitemap.xml
+Sitemap: https://www.tpqmiqi.my.id/sitemap.xml
